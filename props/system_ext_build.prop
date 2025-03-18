@@ -5,24 +5,22 @@
 ro.product.system_ext.brand=samsung
 ro.product.system_ext.device=qssi
 ro.product.system_ext.manufacturer=samsung
-ro.product.system_ext.model=SM-S9160
-ro.product.system_ext.name=dm2qzhx
-ro.product.name_for_attestation=
-ro.product.model_for_attestation=
-ro.product.brand_for_attestation=
-ro.system_ext.build.date=Sat Jan 18 11:15:54 KST 2025
-ro.system_ext.build.date.utc=1737166554
-ro.system_ext.build.fingerprint=samsung/dm2qzhx/qssi:14/UP1A.231005.007/S9160ZHS5CYA1:user/release-keys
-ro.system_ext.build.id=UP1A.231005.007
+ro.product.system_ext.model=SM-S916B
+ro.product.system_ext.name=dm2qxxx
+ro.system_ext.build.date=Tue Mar 11 14:58:40 KST 2025
+ro.system_ext.build.date.utc=1741672720
+ro.system_ext.build.fingerprint=samsung/dm2qxxx/qssi:15/AP3A.240905.015.A2/S916BXXU8ZYC3:user/release-keys
+ro.system_ext.build.id=AP3A.240905.015.A2
 ro.system_ext.build.tags=release-keys
 ro.system_ext.build.type=user
-ro.system_ext.build.version.incremental=S9160ZHS5CYA1
-ro.system_ext.build.version.release=14
-ro.system_ext.build.version.release_or_codename=14
-ro.system_ext.build.version.sdk=34
+ro.system_ext.build.version.incremental=S916BXXU8ZYC3
+ro.system_ext.build.version.release=15
+ro.system_ext.build.version.release_or_codename=15
+ro.system_ext.build.version.sdk=35
 ####################################
 # from variable PRODUCT_SYSTEM_EXT_PROPERTIES
 ####################################
+ro.audio.ihaladaptervendorextension_enabled=true
 persist.vendor.dpm.feature=11
 # end of file
 

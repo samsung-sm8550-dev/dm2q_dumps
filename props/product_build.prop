@@ -5,21 +5,18 @@
 ro.product.product.brand=samsung
 ro.product.product.device=qssi
 ro.product.product.manufacturer=samsung
-ro.product.product.model=SM-S9160
-ro.product.product.name=dm2qzhx
-ro.product.name_for_attestation=
-ro.product.model_for_attestation=
-ro.product.brand_for_attestation=
-ro.product.build.date=Sat Jan 18 11:15:54 KST 2025
-ro.product.build.date.utc=1737166554
-ro.product.build.fingerprint=samsung/dm2qzhx/qssi:14/UP1A.231005.007/S9160ZHS5CYA1:user/release-keys
-ro.product.build.id=UP1A.231005.007
+ro.product.product.model=SM-S916B
+ro.product.product.name=dm2qxxx
+ro.product.build.date=Tue Mar 11 14:58:40 KST 2025
+ro.product.build.date.utc=1741672720
+ro.product.build.fingerprint=samsung/dm2qxxx/qssi:15/AP3A.240905.015.A2/S916BXXU8ZYC3:user/release-keys
+ro.product.build.id=AP3A.240905.015.A2
 ro.product.build.tags=release-keys
 ro.product.build.type=user
-ro.product.build.version.incremental=S9160ZHS5CYA1
-ro.product.build.version.release=14
-ro.product.build.version.release_or_codename=14
-ro.product.build.version.sdk=34
+ro.product.build.version.incremental=S916BXXU8ZYC3
+ro.product.build.version.release=15
+ro.product.build.version.release_or_codename=15
+ro.product.build.version.sdk=35
 ####################################
 # from packages/modules/Bluetooth/system/bluetooth.prop
 ####################################
@@ -47,18 +44,20 @@ bluetooth.profile.avrcp.target.enabled=true
 #bluetooth.profile.bap.broadcast.source.enabled?=false
 # Removed by post_process_props.py because overridden by bluetooth.profile.bap.unicast.client.enabled=true
 #bluetooth.profile.bap.unicast.client.enabled?=false
-bluetooth.profile.bas.client.enabled=false
+# Removed by post_process_props.py because overridden by bluetooth.profile.bas.client.enabled=true
+#bluetooth.profile.bas.client.enabled?=false
 # Removed by post_process_props.py because overridden by bluetooth.profile.csip.set_coordinator.enabled=true
 #bluetooth.profile.csip.set_coordinator.enabled?=false
 bluetooth.profile.gatt.enabled=true
-bluetooth.profile.hap.client.enabled=false
+# Removed by post_process_props.py because overridden by bluetooth.profile.hap.client.enabled=true
+#bluetooth.profile.hap.client.enabled?=false
 bluetooth.profile.hfp.ag.enabled=true
 bluetooth.profile.hid.device.enabled=true
 bluetooth.profile.hid.host.enabled=true
 bluetooth.profile.map.server.enabled=true
 # Removed by post_process_props.py because overridden by bluetooth.profile.mcp.server.enabled=true
 #bluetooth.profile.mcp.server.enabled?=false
-bluetooth.profile.opp.enabled=true
+bluetooth.profile.opp.enabled=false
 bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
@@ -67,12 +66,23 @@ bluetooth.profile.sap.server.enabled=true
 #bluetooth.profile.ccp.server.enabled?=false
 # Removed by post_process_props.py because overridden by bluetooth.profile.vcp.controller.enabled=true
 #bluetooth.profile.vcp.controller.enabled?=false
+# SS_GAP_FEATURE - GAP_210 : Set AUTO_ON property with default false
+#bluetooth.server.automatic_turn_on?=true
+# SS_GAP_FEATURE END
+# SS_GAP_FEATURE - GAP_042
+bluetooth.device_id.vendor_id=0x0075
+bluetooth.device_id.product_id=0x0100
+bluetooth.device_id.product_version=0x0201
+# SS_GAP_FEATURE END
 # Codec capabilities that support a2dp offload
 persist.bluetooth.samsung.a2dp_offload.cap=sbc-aptx-ssc-hifi
+# SS_A2DP_FEATURE
+bluetooth.profile.a2dp.sink.enabled=false
+bluetooth.profile.avrcp.controller.enabled=false
 ####################################
 # from variable ADDITIONAL_PRODUCT_PROPERTIES
 ####################################
-ro.product.vndk.version=34
+ro.product.build.16k_page.enabled=false
 ro.build.characteristics=phone
 ro.product.cpu.pagesize.max=4096
 # Value overridden by post_process_props.py. Original value: default
@@ -82,6 +92,7 @@ ro.dalvik.vm.enable_uffd_gc=true
 ####################################
 remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
+persist.wm.extensions.enabled=true
 af.fast_track_multiplier=1
 audio.offload.video=true
 audio.deep_buffer.media=true
@@ -96,8 +107,8 @@ aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.connect_timeout_millis=2000
 persist.sys.usb.config=mtp,conn_gadget
-ro.boot.uwbcountrycode=ff
 bluetooth.profile.bap.unicast.client.enabled=true
 bluetooth.profile.csip.set_coordinator.enabled=true
 bluetooth.profile.mcp.server.enabled=true
@@ -105,6 +116,9 @@ bluetooth.profile.ccp.server.enabled=true
 bluetooth.profile.vcp.controller.enabled=true
 bluetooth.profile.bap.broadcast.assist.enabled=true
 bluetooth.profile.bap.broadcast.source.enabled=true
+bluetooth.profile.hap.client.enabled=true
+bluetooth.profile.bas.client.enabled=true
+ro.boot.uwbcountrycode=ff
 ro.frp.pst=/dev/block/persistent
 ro.com.google.cdb.spa1=bsxasm1
 ro.com.google.clientidbase.tx=android-samsung-rvodxai
@@ -118,7 +132,7 @@ setupwizard.theme=glif_v3_light
 ro.setupwizard.wifi_on_exit=false
 ro.setupwizard.mode=OPTIONAL
 ro.opa.eligible_device=true
-ro.com.google.gmsversion=14_202406
+ro.com.google.gmsversion=15_202411
 setupwizard.feature.enable_quick_start_flow=true
 # end of file
 

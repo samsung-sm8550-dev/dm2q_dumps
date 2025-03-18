@@ -1,4 +1,8 @@
-<manifest version="1.0" type="framework">
+<!--
+    Input:
+        vendor/samsung/frameworks/hdr/services/aidl/default/vendor.samsung.frameworks.hdrsolution-manifest.xml
+-->
+<manifest version="8.0" type="framework">
     <hal format="aidl">
         <name>vendor.samsung.frameworks.hdrsolution</name>
         <fqname>ISehHdrSolution/default</fqname>

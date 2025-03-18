@@ -7,12 +7,9 @@
         manifest.xml
         manifest.xml
         face-default-sec.xml
-        soter_device-manifest.xml
         rkp_skeymint_v200_manifest.xml
         strongbox_km_v40_manifest.xml
         gatekeeper_manifest.xml
-        manifest.xml
-        manifest.xml
         manifest.xml
         manifest.xml
         manifest.xml
@@ -191,6 +188,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.7::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.cacert</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IService</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
@@ -456,34 +463,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISehHdcpKeyProvisioning/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.sem</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSem</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehSem/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.skpm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSkpm</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehSkpm/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.soter</name>
-        <interface>
-            <name>ISehSoter</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>ISehSoter/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>

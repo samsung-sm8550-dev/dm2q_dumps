@@ -1,8 +1,8 @@
 <manifest version="1.0" type="device">
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.soter</name>
+    <hal format="aidl" override="true">
+        <name>vendor.samsung.hardware.security.skpm</name>
         <interface>
-            <name>ISehSoter</name>
+            <name>ISehSkpm</name>
             <instance>default</instance>
         </interface>
     </hal>

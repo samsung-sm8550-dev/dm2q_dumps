@@ -1,10 +1,10 @@
-<manifest version="1.0" type="framework">
+<!--
+    Input:
+        frameworks/base/samsung/FabricCrypto/cryptod/fabric_crypto_manifest.xml
+-->
+<manifest version="8.0" type="framework">
     <hal format="aidl">
         <name>com.samsung.security.fabric.cryptod</name>
-        <version>1</version>
-        <interface>
-            <name>IFabricCryptoService</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>IFabricCryptoService/default</fqname>
     </hal>
 </manifest>

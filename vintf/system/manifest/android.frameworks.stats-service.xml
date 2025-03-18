@@ -1,14 +1,13 @@
-<manifest version="1.0" type="framework">
-    <hal max-level="5">
+<!--
+    Input:
+        frameworks/native/services/stats/android.frameworks.stats-service.xml
+-->
+<manifest version="8.0" type="framework">
+    <hal format="hidl" max-level="5">
         <name>android.frameworks.stats</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IStats</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IStats/default</fqname>
     </hal>
-
     <hal format="aidl">
         <name>android.frameworks.stats</name>
         <version>2</version>

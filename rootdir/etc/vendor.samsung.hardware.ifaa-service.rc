@@ -1,4 +1,0 @@
-service vendor.samsung.hardware.ifaa-default /vendor/bin/hw/vendor.samsung.hardware.ifaa-service
-    class late_start
-    user system
-    group system

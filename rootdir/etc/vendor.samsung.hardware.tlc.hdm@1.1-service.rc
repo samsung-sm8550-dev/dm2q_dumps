@@ -42,6 +42,9 @@ on property:vendor.hdm.internal.wlan=start
 on property:vendor.hdm.internal.wlan=stop
     stop wificond
 
+on property:vendor.hdm.internal.wlan=chown
+    chown system system /sys/kernel/hdm_wlan_loader
+
 on property:vendor.hdm.internal.bt=boot
     stop vendor.bluetooth-1-1-qti
 

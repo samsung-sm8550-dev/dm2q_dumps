@@ -56,3 +56,33 @@ do
     count=$(($count + 1))
 done
 
+################### export hdm, pad supported subsystem ################### 
+sysfs="/sys/devices/virtual/sec/hdm/"
+sysfs_hdm_name="hdm_subsystem"
+sysfs_pad_name="pad_subsystem"
+sysfs_hdm_block_type="bt_block_sub"
+sysfs_hdm_unblock_type="bt_unblock_sub"
+
+hdm_subsystem=$(cat $sysfs$sysfs_hdm_name)
+pad_subsystem=$(cat $sysfs$sysfs_pad_name)
+hdm_block_type=$(cat $sysfs$sysfs_hdm_block_type)
+hdm_unblock_type=$(cat $sysfs$sysfs_hdm_unblock_type)
+
+if [[ "${hdm_subsystem:0:2}" == "0x" ]]; then
+echo "hdm_subsystem = $hdm_subsystem"
+setprop ro.vendor.hdm.hdm_supported_subsystem "${hdm_subsystem:2}"
+
+echo "pad_subsystem = $pad_subsystem"
+setprop ro.vendor.hdm.pad_supported_subsystem "${pad_subsystem:2}"
+fi
+
+if [[ "${hdm_block_type:0:2}" == "0x" ]]; then
+echo "hdm_block_type = $hdm_block_type"
+setprop ro.vendor.hdm.btonly.subsystem "${hdm_block_type:2}"
+
+echo "hdm_unblock_type = $hdm_unblock_type"
+setprop ro.vendor.hdm.btonly.unblock.subsystem "${hdm_unblock_type:2}"
+fi
+################### export hdm, pad supported subsystem ################### 
+
+

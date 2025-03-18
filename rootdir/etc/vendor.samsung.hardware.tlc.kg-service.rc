@@ -1,6 +1,5 @@
-service kgtaserv /vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service
-    interface vendor.samsung.hardware.tlc.kg@1.0::ISehKg default
-    interface vendor.samsung.hardware.tlc.kg@1.1::ISehKg default
+service kgtaserv /vendor/bin/hw/vendor.samsung.hardware.tlc.kg-service
+    interface aidl vendor.samsung.hardware.tlc.kg.ISehKg/default
     class hal
     user system
     group system

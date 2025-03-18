@@ -13,6 +13,6 @@ service mppserver /vendor/bin/hw/mppserver
     disabled
     class hal
     user system
-    group system
+    group system drmrpc
     ioprio rt 4
     task_profiles ProcessCapacityHigh HighPerformance

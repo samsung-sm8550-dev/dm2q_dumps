@@ -79,6 +79,8 @@ on early-init
     chown system system /dev/cpuctl/foreground-boost/cgroup.procs
     chmod 0664 /dev/cpuctl/foreground-boost/tasks
     chmod 0664 /dev/cpuctl/foreground-boost/cgroup.procs
+    chown root system /dev/cpuctl/foreground-boost/cpu.shares
+    chmod 0664 /dev/cpuctl/foreground-boost/cpu.shares
 
     mkdir /dev/cpuset/foreground-boost
     copy /dev/cpuset/cpus /dev/cpuset/foreground-boost/cpus
@@ -92,6 +94,7 @@ on early-init
 
     # set property to boost-optimize
     setprop sys.perf.boostopt true
+    setprop sys.perf.viboost true
 
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}

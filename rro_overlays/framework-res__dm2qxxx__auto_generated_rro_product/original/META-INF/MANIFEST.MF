@@ -1,17 +1,17 @@
 Manifest-Version: 1.0
 
 Name: AndroidManifest.xml
-SHA-256-Digest: 2xzgZO9Nzxb15zxd5oUI5MCNaKkRQnrxHmKc5ZVU3l8=
+SHA-256-Digest: LLAiZvqK5xPmk7P9yCus+dQxx/2NgrgtgGSunvHp9jc=
 
 Name: SEC-INF/buildConfirm.crt
 SHA-256-Digest: KXPtZBP9ZJT4aUs4ggqLtOJUTC3FoNcQEqzF2uC25xc=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: z7mF8d5Bdy320z9Z8OjoD8fM1q+Rnm0UqPhRz6Orh3I=
+SHA-256-Digest: qUk7FunCLAElXelDIVsrZ8Iz8J2MmhVEnsA8c3GbJv0=
 
 Name: res/xml/power_profile.xml
 SHA-256-Digest: G023SvdPzALtdy3m07MZY64j4im4OfJntNno4fZZxxc=
 
 Name: resources.arsc
-SHA-256-Digest: kgRqkFLyRRbs1l8WtdfKEyCyI2VrlbCP/gK786E97Ww=
+SHA-256-Digest: sjCBhhV1MFasowXdn4E22IXYy+wicPF2MMV2suDZjjQ=
 

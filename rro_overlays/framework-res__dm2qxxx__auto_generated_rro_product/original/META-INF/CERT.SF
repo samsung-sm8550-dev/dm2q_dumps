@@ -1,20 +1,20 @@
 Signature-Version: 1.0
-Created-By: 1.0 (MX Security SignApk)
-SHA-256-Digest-Manifest: xa4jaJdkPuA0MMBoM5BZcC6wbHn5Xggh6KR/bA0bRLc=
+Created-By: 2.0 (Samsung SignApk)
+SHA-256-Digest-Manifest: voz973/kBNBlmW5j6kaKTp04VmwDS4QDr3LhyxQO2sw=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
-SHA-256-Digest: aUVBwqUWbC3cvbz5vAwyNcF2xYMcRFlcROaXXyJ376Y=
+SHA-256-Digest: sL3Lq6JUOJ6EQZqrCVKpBhTipwlL4ZXWE7OLp5wnlJM=
 
 Name: SEC-INF/buildConfirm.crt
 SHA-256-Digest: P3ynqIdbDmwF1PsNloTMDkK1dQ1IUV/iAEjaKUKMbUg=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: ehsmr9mXMcGoM5enKXPlKjwflAJrH17u/kninKGIDGE=
+SHA-256-Digest: a3gzejyriNU2uEFi2IZdJZjDpIz078C0o+QH+2pdYMs=
 
 Name: res/xml/power_profile.xml
 SHA-256-Digest: b6bGU2xip/nmEpY9uhRegk5PqQj/roSwVwlYRdHoaUI=
 
 Name: resources.arsc
-SHA-256-Digest: psGB5KuzjbwQV/hm/fyPy0OtxJLqybfxi9FTKyYuKw0=
+SHA-256-Digest: msqHVMyh78NrRxfI7L8TZbQZ0+F2w7c6PchzgM2Ir6I=
 

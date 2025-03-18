@@ -1,24 +1,21 @@
-version: 2.9.3
-apkFileName: framework-res__auto_generated_rro_product.apk
+version: 2.11.0
+apkFileName: framework-res__dm2qxxx__auto_generated_rro_product.apk
 isFrameworkApk: false
 usesFramework:
   ids:
   - 1
   tag: null
 sdkInfo:
-  minSdkVersion: 34
-  targetSdkVersion: 34
+  minSdkVersion: 35
+  targetSdkVersion: 35
 packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
   versionCode: 1
   versionName: 1.0
-resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
-unknownFiles:
-  SEC-INF/buildConfirm.crt: 8
-  SEC-INF/buildinfo.xml: 8
+compactEntries: false
 doNotCompress:
-- resources.arsc
+- arsc

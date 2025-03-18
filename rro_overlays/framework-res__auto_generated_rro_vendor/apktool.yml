@@ -1,4 +1,4 @@
-version: 2.9.3
+version: 2.11.0
 apkFileName: framework-res__auto_generated_rro_vendor.apk
 isFrameworkApk: false
 usesFramework:
@@ -14,11 +14,8 @@ packageInfo:
 versionInfo:
   versionCode: 1
   versionName: 1.0
-resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
-unknownFiles:
-  SEC-INF/buildConfirm.crt: 8
-  SEC-INF/buildinfo.xml: 8
+compactEntries: false
 doNotCompress:
-- resources.arsc
+- arsc
